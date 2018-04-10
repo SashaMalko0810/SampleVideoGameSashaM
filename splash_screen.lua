@@ -24,7 +24,8 @@ local scene = composer.newScene( sceneName )
 -- The local variables for this scene
 local butterfly
 local scrollXSpeed = 8
-local scrollYSpeed = -3
+
+--Sounds
 local chimesSounds = audio.loadSound("Sounds/Chimes.mp3")
 local chimesSoundsChannel
 
@@ -35,7 +36,6 @@ local chimesSoundsChannel
 -- The function that moves the butterfly across the screen
 local function moveButterfly()
     butterfly.x = butterfly.x + scrollXSpeed
-    butterfly.y = butterfly.y + scrollYSpeed
 end
 
 -- The function that will go to the main menu 
@@ -122,7 +122,7 @@ function scene:hide( event )
     -- Called immediately after scene goes off screen.
     elseif ( phase == "did" ) then
         
-        -- stop the jungle sounds channel for this screen
+        -- stop the chimes sounds channel for this screen
         audio.stop(chimesSoundsChannel)
     end
 

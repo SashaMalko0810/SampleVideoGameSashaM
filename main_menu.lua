@@ -39,6 +39,10 @@ local playButton
 local creditsButton
 local instructionsButton
 
+--Sounds
+local easy = audio.loadSound("Sounds/easy.mp3")
+local easyChannel
+
 -----------------------------------------------------------------------------------------
 -- LOCAL FUNCTIONS
 -----------------------------------------------------------------------------------------
@@ -95,11 +99,11 @@ function scene:create( event )
     playButton = widget.newButton( 
         {   
             -- Set its position on the screen relative to the screen size
-            x = 100,
+            x = 120,
             y = 600,
 
-            width = 150,
-            height = 75,
+            width = 200,
+            height = 100,
 
             -- Insert the images here
             defaultFile = "Images/Start Button Unpressed.png",
@@ -115,11 +119,11 @@ function scene:create( event )
     creditsButton = widget.newButton( 
         {
             -- Set its position on the screen relative to the screen size
-            x = 100,
+            x = 120,
             y = 400,
 
-            width = 150,
-            height = 75,
+            width = 200,
+            height = 100,
 
             -- Insert the images here
             defaultFile = "Images/Credits Button Unpressed.png",
@@ -135,11 +139,11 @@ function scene:create( event )
     instructionsButton = widget.newButton( 
         {
             -- Set its position on the screen relative to the screen size
-            x = 100,
+            x = 120,
             y = 200,
 
-            width = 150,
-            height = 75,
+            width = 200,
+            height = 100,
 
             -- Insert the images here
             defaultFile = "Images/Instructions Button Unpressed.png",
@@ -183,8 +187,10 @@ function scene:show( event )
     -- Called when the scene is now on screen.
     -- Insert code here to make the scene come alive.
     -- Example: start timers, begin animation, play audio, etc.
-    elseif ( phase == "did" ) then       
-        
+    elseif ( phase == "did" ) then  
+
+    --play background music     
+    easyChannel = audio.play(easy)
 
     end
 
