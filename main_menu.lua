@@ -49,19 +49,19 @@ local easyChannel
 
 -- Creating Transition Function to Credits Page
 local function CreditsTransition( )       
-    composer.gotoScene( "credits_screen", {effect = "flipFadeOutIn", time = 500})
+    composer.gotoScene( "credits_screen", {effect = "flip", time = 500})
 end 
 ----------------------------------------------------------------------------------------
 -- Creating Transition to Level1 Screen
 local function Level1ScreenTransition( )
-    composer.gotoScene( "level1_screen", {effect = "zoomInOutFade", time = 1000})
+    composer.gotoScene( "level1_screen", {effect = "zoomInOut", time = 1000})
 end    
 
 ----------------------------------------------------------------------------------------
 
 -- Creating Transition Function to Instructions Page
 local function InstructionsTransition( )       
-    composer.gotoScene( "instructions_screen", {effect = "flipFadeOutIn", time = 500})
+    composer.gotoScene( "instructions_screen", {effect = "slideDown", time = 500})
 end 
 -----------------------------------------------------------------------------------------
 -- GLOBAL SCENE FUNCTIONS
