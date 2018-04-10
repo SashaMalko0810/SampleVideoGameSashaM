@@ -1,10 +1,12 @@
 -----------------------------------------------------------------------------------------
---
 -- main_menu.lua
--- Created by: Your Name
--- Date: Month Day, Year
+-- Created by: Sasha Malko
+-- Date: April 9, 2018
 -- Description: This is the main menu, displaying the credits, instructions & play buttons.
 -----------------------------------------------------------------------------------------
+
+--hide the status bar
+display.setStatusBar(display.HiddenStatusBar)
 
 -----------------------------------------------------------------------------------------
 -- INITIALIZATIONS

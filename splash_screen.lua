@@ -1,10 +1,9 @@
 -----------------------------------------------------------------------------------------
---
 -- splash_screen.lua
--- Created by: Your Name
--- Date: Month Day, Year
+-- Created by: Sasha Malko
+-- Date: April 9, 2018
 -- Description: This is the splash screen of the game. It displays the 
--- company logo that...
+-- company logo that moves across the screen.
 -----------------------------------------------------------------------------------------
 
 -- Use Composer Library
@@ -33,7 +32,7 @@ local chimesSoundsChannel
 -- LOCAL FUNCTIONS
 --------------------------------------------------------------------------------------------
 
--- The function that moves the beetleship across the screen
+-- The function that moves the butterfly across the screen
 local function moveButterfly()
     butterfly.x = butterfly.x + scrollXSpeed
     butterfly.y = butterfly.y + scrollYSpeed
@@ -57,10 +56,10 @@ function scene:create( event )
     -- set the background to be black
     display.setDefault("background", 0, 0, 0)
 
-    -- Insert the beetleship image
+    -- Insert the butterfly image
     butterfly = display.newImageRect("Images/Butterfly.png", 200, 200)
 
-    -- set the initial x and y position of the beetleship
+    -- set the initial x and y position of the butterfly
     butterfly.x = 100
     butterfly.y = display.contentHeight/2
 
@@ -92,7 +91,7 @@ function scene:show( event )
         -- start the splash screen music
         chimesSoundsChannel = audio.play(chimesSounds )
 
-        -- Call the moveBeetleship function as soon as we enter the frame.
+        -- Call the moveButterfly function as soon as we enter the frame.
         Runtime:addEventListener("enterFrame", moveButterfly)
 
         -- Go to the main menu screen after the given time.
