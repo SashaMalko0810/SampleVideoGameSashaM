@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 -- splash_screen.lua
 -- Created by: Sasha Malko
--- Date: April 9, 2018
+-- Date: May 4, 2018
 -- Description: This is the splash screen of the game. It displays the 
 -- company logo that moves across the screen.
 -----------------------------------------------------------------------------------------

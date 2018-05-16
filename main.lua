@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 -- main.lua
 -- Created by: Sasha Malko
--- Date: April 9, 2018
+-- Date: May 4, 2018
 -- Description: This calls the splash screen of the app to load itself.
 -----------------------------------------------------------------------------------------
 

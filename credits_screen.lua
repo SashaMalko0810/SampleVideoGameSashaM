@@ -2,7 +2,7 @@
 -- credits_screen.lua
 -- Created by: Sasha Malko
 -- Special thanks to Wal Wal for helping in the design of this framework.
--- Date: April 9, 2018
+-- Date: May 4, 2018
 -- Description: This is the credits page, displaying a back button to the main menu.
 -----------------------------------------------------------------------------------------
 
